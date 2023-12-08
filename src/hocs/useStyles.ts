@@ -1,5 +1,3 @@
-type StylesType = typeof import('*.scss');
-
 export type WithStylesImportType = {
   globalStyles?: Record<any, any>;
   styles?: Record<any, any>;
@@ -8,7 +6,7 @@ export type WithStylesImportType = {
 export function useStyles({
   clientImportCallback
 }: {
-  clientImportCallback?: () => StylesType;
+  clientImportCallback?: () => Record<any, any>;
 }) {
   return {
     globalStyles: require('assets/sass/main.scss').default,
