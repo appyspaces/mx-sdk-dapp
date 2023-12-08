@@ -76,10 +76,6 @@ const LedgerLoadingComponent = ({
 };
 
 export const LedgerLoading = withStyles(LedgerLoadingComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/ledger/LedgerLoginContainer/LedgerLoading/ledgerLoadingStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/ledger/LedgerLoginContainer/LedgerLoading/ledgerLoadingStyles.scss')
       .default

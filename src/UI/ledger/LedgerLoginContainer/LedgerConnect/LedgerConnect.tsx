@@ -137,10 +137,6 @@ const LedgerConnectComponent = ({
 };
 
 export const LedgerConnect = withStyles(LedgerConnectComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/ledger/LedgerLoginContainer/LedgerConnect/ledgerConnectStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/ledger/LedgerLoginContainer/LedgerConnect/ledgerConnectStyles.scss')
       .default

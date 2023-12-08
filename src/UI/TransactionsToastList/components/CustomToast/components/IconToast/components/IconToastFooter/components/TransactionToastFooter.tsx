@@ -41,8 +41,6 @@ const TransactionToastFooterComponent = (
 export const TransactionToastFooter = withStyles(
   TransactionToastFooterComponent,
   {
-    ssrStyles: () =>
-      import('UI/TransactionDetails/transactionDetails.styles.scss'),
     clientStyles: () =>
       require('UI/TransactionDetails/transactionDetails.styles.scss').default
   }

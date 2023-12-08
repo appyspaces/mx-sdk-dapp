@@ -52,10 +52,6 @@ const IconToastComponent = (
 };
 
 export const IconToast = withStyles(IconToastComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/TransactionsToastList/components/TransactionToast/transactionToast.styles.scss'
-    ),
   clientStyles: () =>
     require('UI/TransactionsToastList/components/TransactionToast/transactionToast.styles.scss')
       .default

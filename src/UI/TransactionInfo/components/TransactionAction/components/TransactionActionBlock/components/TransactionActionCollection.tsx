@@ -44,10 +44,6 @@ const TransactionActionCollectionComponent = ({
 export const TransactionActionCollection = withStyles(
   TransactionActionCollectionComponent,
   {
-    ssrStyles: () =>
-      import(
-        'UI/TransactionInfo/components/TransactionAction/components/TransactionActionBlock/styles.scss'
-      ),
     clientStyles: () =>
       require('UI/TransactionInfo/components/TransactionAction/components/TransactionActionBlock/styles.scss')
         .default

@@ -93,10 +93,6 @@ const ExtensionLoginButtonComponent: (
 };
 
 export const ExtensionLoginButton = withStyles(ExtensionLoginButtonComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/extension/ExtensionLoginButton/extensionLoginButton.styles.scss'
-    ),
   clientStyles: () =>
     require('UI/extension/ExtensionLoginButton/extensionLoginButton.styles.scss')
       .default

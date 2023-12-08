@@ -18,8 +18,6 @@ export function withStyles<TProps>(
 ) {
   return (props: TProps) => {
     const { globalStyles, styles } = useStyles({
-      ssrGlobalImportCallback: imports.ssrGlobalStyles,
-      ssrImportCallback: imports.ssrStyles,
       clientImportCallback: imports.clientStyles
     });
 

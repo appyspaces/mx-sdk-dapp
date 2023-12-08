@@ -33,8 +33,6 @@ const CustomComponentToastComponent = ({
 };
 
 export const CustomComponentToast = withStyles(CustomComponentToastComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionsToastList/transactionsToastList.styles.scss'),
   clientStyles: () =>
     require('UI/TransactionsToastList/transactionsToastList.styles.scss')
       .default

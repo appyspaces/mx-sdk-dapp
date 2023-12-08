@@ -29,10 +29,6 @@ const ResultReceiverComponent = ({
 );
 
 export const ResultReceiver = withStyles(ResultReceiverComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/TransactionInfo/components/ScResultsList/components/ResultReceiver/styles.scss'
-    ),
   clientStyles: () =>
     require('UI/TransactionInfo/components/ScResultsList/components/ResultReceiver/styles.scss')
       .default

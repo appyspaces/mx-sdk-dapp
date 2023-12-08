@@ -42,13 +42,11 @@ const CombinedComponent = ({
 );
 
 export const Simple = withStyles(SimpleComponent, {
-  ssrStyles: () => import('UI/TokenDetails/TokenSymbol/tokenSymbol.scss'),
   clientStyles: () =>
     require('UI/TokenDetails/TokenSymbol/tokenSymbol.scss').default
 });
 
 export const Combined = withStyles(CombinedComponent, {
-  ssrStyles: () => import('UI/TokenDetails/TokenSymbol/tokenSymbol.scss'),
   clientStyles: () =>
     require('UI/TokenDetails/TokenSymbol/tokenSymbol.scss').default
 });

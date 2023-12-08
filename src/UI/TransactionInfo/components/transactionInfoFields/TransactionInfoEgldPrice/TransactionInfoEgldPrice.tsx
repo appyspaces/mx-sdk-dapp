@@ -25,10 +25,6 @@ const TransactionInfoEgldPriceComponent = ({
 export const TransactionInfoEgldPrice = withStyles(
   TransactionInfoEgldPriceComponent,
   {
-    ssrStyles: () =>
-      import(
-        'UI/TransactionInfo/components/transactionInfoFields/TransactionInfoEgldPrice/styles.scss'
-      ),
     clientStyles: () =>
       require('UI/TransactionInfo/components/transactionInfoFields/TransactionInfoEgldPrice/styles.scss')
         .default

@@ -25,10 +25,6 @@ export const useTransactionToast = ({
   onDelete
 }: TransactionToastDefaultProps) => {
   const { styles } = useStyles({
-    ssrImportCallback: () =>
-      import(
-        'UI/TransactionsToastList/components/TransactionToast/transactionToast.styles.scss'
-      ),
     clientImportCallback: () =>
       require('UI/TransactionsToastList/components/TransactionToast/transactionToast.styles.scss')
         .default

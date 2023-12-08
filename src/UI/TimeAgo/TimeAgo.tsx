@@ -36,8 +36,6 @@ const TimeAgoComponent = ({
 };
 
 export const TimeAgo = withStyles(TimeAgoComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionsTable/components/transactionsTable.styles.scss'),
   clientStyles: () =>
     require('UI/TransactionsTable/components/transactionsTable.styles.scss')
       .default

@@ -32,8 +32,6 @@ const ScrDetailItemComponent = ({
 );
 
 export const ScrDetailItem = withStyles(ScrDetailItemComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionInfo/components/ScrDetailItem/styles.scss'),
   clientStyles: () =>
     require('UI/TransactionInfo/components/ScrDetailItem/styles.scss').default
 });

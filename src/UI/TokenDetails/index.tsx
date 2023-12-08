@@ -44,7 +44,6 @@ function getIconComponent({
 }
 
 const getIcon = withStyles(getIconComponent, {
-  ssrStyles: () => import('UI/TokenDetails/tokenDetailsStyles.scss'),
   clientStyles: () => require('UI/TokenDetails/tokenDetailsStyles.scss').default
 });
 

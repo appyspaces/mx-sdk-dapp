@@ -20,10 +20,6 @@ const StatusMessage = ({
 );
 
 export const StatusMessageComponent = withStyles(StatusMessage, {
-  ssrStyles: () =>
-    import(
-      'components/TransactionStatusToast/transactionStatusToastStyles.scss'
-    ),
   clientStyles: () =>
     require('components/TransactionStatusToast/transactionStatusToastStyles.scss')
       .default

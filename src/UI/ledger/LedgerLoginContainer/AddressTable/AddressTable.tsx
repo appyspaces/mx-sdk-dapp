@@ -258,10 +258,6 @@ const AddressTableComponent = ({
 };
 
 export const AddressTable = withStyles(AddressTableComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/ledger/LedgerLoginContainer/AddressTable/addressTableStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/ledger/LedgerLoginContainer/AddressTable/addressTableStyles.scss')
       .default

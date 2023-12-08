@@ -24,10 +24,6 @@ const TransactionInfoGasPriceComponent = ({
 export const TransactionInfoGasPrice = withStyles(
   TransactionInfoGasPriceComponent,
   {
-    ssrStyles: () =>
-      import(
-        'UI/TransactionInfo/components/transactionInfoFields/TransactionInfoGasPrice/styles.scss'
-      ),
     clientStyles: () =>
       require('UI/TransactionInfo/components/transactionInfoFields/TransactionInfoGasPrice/styles.scss')
         .default

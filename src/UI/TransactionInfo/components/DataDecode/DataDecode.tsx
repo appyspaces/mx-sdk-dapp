@@ -59,8 +59,6 @@ const DataDecodeComponent = (
 };
 
 export const DataDecode = withStyles(DataDecodeComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionInfo/components/DataDecode/styles.scss'),
   clientStyles: () =>
     require('UI/TransactionInfo/components/DataDecode/styles.scss').default
 });

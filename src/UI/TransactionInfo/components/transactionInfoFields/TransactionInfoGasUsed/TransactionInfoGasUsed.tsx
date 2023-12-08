@@ -28,10 +28,6 @@ const TransactionInfoGasUsedComponent = ({
 export const TransactionInfoGasUsed = withStyles(
   TransactionInfoGasUsedComponent,
   {
-    ssrStyles: () =>
-      import(
-        'UI/TransactionInfo/components/transactionInfoFields/TransactionInfoGasUsed/styles.scss'
-      ),
     clientStyles: () =>
       require('UI/TransactionInfo/components/transactionInfoFields/TransactionInfoGasUsed/styles.scss')
         .default

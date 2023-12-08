@@ -67,10 +67,6 @@ const ConfirmFeeComponent = ({
 };
 
 export const ConfirmFee = withStyles(ConfirmFeeComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/SignTransactionsModals/SignWithDeviceModal/components/components/ConfirmFee/confirmFeeStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/SignTransactionsModals/SignWithDeviceModal/components/components/ConfirmFee/confirmFeeStyles.scss')
       .default

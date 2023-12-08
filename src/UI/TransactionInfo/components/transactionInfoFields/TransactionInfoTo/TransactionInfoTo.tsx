@@ -102,10 +102,6 @@ const TransactionInfoToComponent = ({
 };
 
 export const TransactionInfoTo = withStyles(TransactionInfoToComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/TransactionInfo/components/transactionInfoFields/TransactionInfoTo/styles.scss'
-    ),
   clientStyles: () =>
     require('UI/TransactionInfo/components/transactionInfoFields/TransactionInfoTo/styles.scss')
       .default

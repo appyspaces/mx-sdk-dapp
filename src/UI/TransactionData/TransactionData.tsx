@@ -144,7 +144,6 @@ const TransactionDataComponent = ({
 };
 
 export const TransactionData = withStyles(TransactionDataComponent, {
-  ssrStyles: () => import('UI/TransactionData/TransactionDataStyles.scss'),
   clientStyles: () =>
     require('UI/TransactionData/TransactionDataStyles.scss').default
 });

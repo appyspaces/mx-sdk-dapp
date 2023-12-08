@@ -57,8 +57,6 @@ const TransactionShardsTransitionComponent = ({
 export const TransactionShardsTransition = withStyles(
   TransactionShardsTransitionComponent,
   {
-    ssrStyles: () =>
-      import('UI/TransactionsTable/components/transactionsTable.styles.scss'),
     clientStyles: () =>
       require('UI/TransactionsTable/components/transactionsTable.styles.scss')
         .default

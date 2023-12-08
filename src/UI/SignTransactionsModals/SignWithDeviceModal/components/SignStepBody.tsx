@@ -186,10 +186,6 @@ const SignStepBodyComponent = ({
 };
 
 export const SignStepBody = withStyles(SignStepBodyComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/SignTransactionsModals/SignWithDeviceModal/components/signStepBodyStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/SignTransactionsModals/SignWithDeviceModal/components/signStepBodyStyles.scss')
       .default

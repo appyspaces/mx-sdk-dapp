@@ -129,6 +129,5 @@ const FormatAmountWrapper = (
 };
 
 export const FormatAmount = withStyles(FormatAmountWrapper, {
-  ssrStyles: () => import('UI/FormatAmount/formatAmountStyles.scss'),
   clientStyles: () => require('UI/FormatAmount/formatAmountStyles.scss').default
 });

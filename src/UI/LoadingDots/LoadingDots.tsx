@@ -23,6 +23,5 @@ const LoadingDotsComponent = ({
 );
 
 export const LoadingDots = withStyles(LoadingDotsComponent, {
-  ssrStyles: () => import('UI/LoadingDots/loadingDotsStyle.scss'),
   clientStyles: () => require('UI/LoadingDots/loadingDotsStyle.scss').default
 });

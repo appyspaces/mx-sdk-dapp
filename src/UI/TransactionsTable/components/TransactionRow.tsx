@@ -72,8 +72,6 @@ export const TransactionRowComponent = ({
 );
 
 export const TransactionRow = withStyles(TransactionRowComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionsTable/components/transactionsTable.styles.scss'),
   clientStyles: () =>
     require('UI/TransactionsTable/components/transactionsTable.styles.scss')
       .default

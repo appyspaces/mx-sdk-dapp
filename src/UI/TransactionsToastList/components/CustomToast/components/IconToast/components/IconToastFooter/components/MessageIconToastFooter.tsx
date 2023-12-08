@@ -21,8 +21,6 @@ const MessageIconToastFooterComponent = (
 export const MessageIconToastFooter = withStyles(
   MessageIconToastFooterComponent,
   {
-    ssrStyles: () =>
-      import('UI/TransactionDetails/transactionDetails.styles.scss'),
     clientStyles: () =>
       require('UI/TransactionDetails/transactionDetails.styles.scss').default
   }

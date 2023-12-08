@@ -29,8 +29,6 @@ const TransactionToastWrapperComponent = ({
 export const TransactionToastWrapper = withStyles(
   TransactionToastWrapperComponent,
   {
-    ssrStyles: () =>
-      import('UI/TransactionsToastList/transactionsToastList.styles.scss'),
     clientStyles: () =>
       require('UI/TransactionsToastList/transactionsToastList.styles.scss')
         .default

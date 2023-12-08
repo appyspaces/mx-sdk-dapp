@@ -110,7 +110,6 @@ const UnlockPageComponent = ({
 };
 
 export const UnlockPage = withStyles(UnlockPageComponent, {
-  ssrStyles: () => import('UI/pages/UnlockPage/unlockPageStyles.scss'),
   clientStyles: () =>
     require('UI/pages/UnlockPage/unlockPageStyles.scss').default
 });

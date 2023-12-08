@@ -177,10 +177,6 @@ const ActionTextComponent = ({
 };
 
 export const ActionText = withStyles(ActionTextComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/TransactionInfo/components/TransactionAction/components/ActionText/styles.scss'
-    ),
   clientStyles: () =>
     require('UI/TransactionInfo/components/TransactionAction/components/ActionText/styles.scss')
       .default

@@ -22,10 +22,6 @@ const TransactionInfoHashComponent = ({
 );
 
 export const TransactionInfoHash = withStyles(TransactionInfoHashComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/TransactionInfo/components/transactionInfoFields/TransactionInfoHash/styles.scss'
-    ),
   clientStyles: () =>
     require('UI/TransactionInfo/components/transactionInfoFields/TransactionInfoHash/styles.scss')
       .default

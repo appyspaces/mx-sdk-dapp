@@ -77,10 +77,6 @@ const SignWithOperaModalComponent = ({
 };
 
 export const SignWithOperaModal = withStyles(SignWithOperaModalComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/SignTransactionsModals/SignWithOperaModal/signWithOperaModalStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/SignTransactionsModals/SignWithOperaModal/signWithOperaModalStyles.scss')
       .default

@@ -75,8 +75,6 @@ const TransactionReceiverComponent = ({
 };
 
 export const TransactionReceiver = withStyles(TransactionReceiverComponent, {
-  ssrStyles: () =>
-    import('UI/TransactionsTable/components/transactionsTable.styles.scss'),
   clientStyles: () =>
     require('UI/TransactionsTable/components/transactionsTable.styles.scss')
       .default

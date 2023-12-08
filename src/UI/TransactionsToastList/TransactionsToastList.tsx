@@ -200,8 +200,6 @@ export const TransactionsToastListComponent = ({
 export const TransactionsToastList = withStyles(
   TransactionsToastListComponent,
   {
-    ssrStyles: () =>
-      import('UI/TransactionsToastList/transactionsToastList.styles.scss'),
     clientStyles: () =>
       require('UI/TransactionsToastList/transactionsToastList.styles.scss')
         .default

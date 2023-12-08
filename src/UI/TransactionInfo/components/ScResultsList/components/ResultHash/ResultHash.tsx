@@ -31,7 +31,6 @@ const ResultHashComponent = ({
 );
 
 const ResultHash = withStyles(ResultHashComponent, {
-  ssrStyles: () => import('UI/LoadingDots/loadingDotsStyle.scss'),
   clientStyles: () => require('UI/LoadingDots/loadingDotsStyle.scss').default
 });
 

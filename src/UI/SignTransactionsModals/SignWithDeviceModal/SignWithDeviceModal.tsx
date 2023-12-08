@@ -79,10 +79,6 @@ const SignWithDeviceModalComponent = ({
 };
 
 export const SignWithDeviceModal = withStyles(SignWithDeviceModalComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/SignTransactionsModals/SignWithDeviceModal/signWithDeviceModalStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/SignTransactionsModals/SignWithDeviceModal/signWithDeviceModalStyles.scss')
       .default

@@ -71,6 +71,5 @@ const PageStateComponent = ({
 };
 
 export const PageState = withStyles(PageStateComponent, {
-  ssrStyles: () => import('UI/PageState/pageState.styles.scss'),
   clientStyles: () => require('UI/PageState/pageState.styles.scss').default
 });

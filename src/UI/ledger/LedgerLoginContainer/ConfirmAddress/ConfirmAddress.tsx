@@ -139,10 +139,6 @@ const ConfirmAddressComponent = ({
 };
 
 export const ConfirmAddress = withStyles(ConfirmAddressComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/ledger/LedgerLoginContainer/ConfirmAddress/confirmAddressStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/ledger/LedgerLoginContainer/ConfirmAddress/confirmAddressStyles.scss')
       .default

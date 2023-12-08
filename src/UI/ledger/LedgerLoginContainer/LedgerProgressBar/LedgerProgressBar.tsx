@@ -72,10 +72,6 @@ const LedgerProgressBarComponent = ({
 };
 
 export const LedgerProgressBar = withStyles(LedgerProgressBarComponent, {
-  ssrStyles: () =>
-    import(
-      'UI/ledger/LedgerLoginContainer/LedgerProgressBar/progressBarStyles.scss'
-    ),
   clientStyles: () =>
     require('UI/ledger/LedgerLoginContainer/LedgerProgressBar/progressBarStyles.scss')
       .default
