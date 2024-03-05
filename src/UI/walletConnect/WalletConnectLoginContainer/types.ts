@@ -20,6 +20,7 @@ export interface WalletConnectLoginModalPropsType
   title?: string;
   wrapContentInsideModal?: boolean;
   customRequestMethods?: Array<string>;
+  customMobileAnchorComponent?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
   // deprecated - kept for compatibility
   isWalletConnectV2?: boolean;

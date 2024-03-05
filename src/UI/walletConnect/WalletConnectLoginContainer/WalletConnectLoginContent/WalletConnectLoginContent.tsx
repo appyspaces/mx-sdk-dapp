@@ -21,6 +21,7 @@ const WalletConnectLoginContentComponent = ({
   innerWalletConnectComponentsClasses,
   lead = 'Scan the QR code using the xPortal App',
   loginButtonText = 'xPortal App',
+  customMobileAnchorComponent,
   logoutRoute,
   nativeAuth,
   onLoginRedirect,
@@ -103,6 +104,14 @@ const WalletConnectLoginContentComponent = ({
     ? getAuthorizationInfo(token, containerScamPhishingAlertClassName)
     : undefined;
 
+  if (
+    isMobileDevice &&
+    customMobileAnchorComponent &&
+    walletConnectDeepLinkV2
+  ) {
+    customMobileAnchorComponent.href = walletConnectDeepLinkV2;
+  }
+
   return (
     <>
       {showScamPhishingAlert && (
@@ -180,22 +189,28 @@ const WalletConnectLoginContentComponent = ({
         )}
 
         {isMobileDevice && (
-          <a
-            id='accessWalletBtn'
-            data-testid={DataTestIdsEnum.accessWalletBtn}
-            href={walletConnectDeepLinkV2}
-            rel='noopener noreferrer nofollow'
-            target='_blank'
-            className={classNames(
-              globalStyles?.btn,
-              globalStyles?.btnPrimary,
-              styles?.xPortalContainerButton,
-              containerButtonClassName
+          <>
+            {customMobileAnchorComponent ? (
+              customMobileAnchorComponent
+            ) : (
+              <a
+                id='accessWalletBtn'
+                data-testid={DataTestIdsEnum.accessWalletBtn}
+                href={walletConnectDeepLinkV2}
+                rel='noopener noreferrer nofollow'
+                target='_blank'
+                className={classNames(
+                  globalStyles?.btn,
+                  globalStyles?.btnPrimary,
+                  styles?.xPortalContainerButton,
+                  containerButtonClassName
+                )}
+              >
+                <Lighting className={styles?.xPortalContainerButtonIcon} />
+                {loginButtonText}
+              </a>
             )}
-          >
-            <Lighting className={styles?.xPortalContainerButtonIcon} />
-            {loginButtonText}
-          </a>
+          </>
         )}
 
         {activePairings.length > 0 && (
